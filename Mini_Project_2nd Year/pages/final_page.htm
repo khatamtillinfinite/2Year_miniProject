@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary - Dabba Vala</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/final_page.css">
+    <script src="/javaScript/final_page.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Dabba Vala</h1>
+        </div>
+        <div class="logo-img">
+            <img src="/images/logo.png" alt="Dabba Vala Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order-summary">
+            <h2>Order Summary</h2>
+
+            <!-- Order Details Box -->
+            <div class="order-details-box">
+                <h3>Order Details</h3>
+                <p><strong>Selected Items:</strong></p>
+                <ul id="order-items">
+                </ul>
+                <div class="order-totals">
+                    <p><strong>Subtotal:</strong> ₹290</p>
+                    <p><strong>Delivery Fee:</strong> ₹30</p>
+                    <p><strong>Total:</strong> ₹320</p>
+                </div>
+            </div>
+
+            <!-- Delivery Address Box -->
+            <div class="delivery-address-box">
+                <h3>Delivery Details</h3>
+                <form action ="thankyou.htm"class="delivery-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    
+                    <label for="address">Delivery Address:</label>
+                    <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
+                        <button type = "submit" id="Order Now">Order Now</button>
+                </form>
+            </div>
+
+            <p class="thank-you-message">Congrats, bud! You just made the best decision of the day—ordering from us. Your tiffin is in safe hands... unless the delivery guy gets hungry. Just kidding! 🥳🍴</p>
+        </section>
+    </main>
+</body>
+</html>

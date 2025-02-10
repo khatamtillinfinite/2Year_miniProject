@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dabba Vala - Delicious homemade meals delivered to your doorstep. Explore our menu, offers, and more!"
+    />
+    <title>Dabba Vala</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        background-image: url(/images/bg.png);
+        background-size: cover;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* Flexbox Layout */
+      .main_box {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Sidebar Styling */
+      .sidebar_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      /* Sidebar Visibility Toggle */
+      #check:checked ~ .sidebar_menu {
+        transform: translateX(0);
+      }
+
+      .sidebar_menu .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .menu ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .menu ul li {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: 1rem;
+      }
+
+      .menu ul li a:hover {
+        color: #007bff;
+        text-decoration: underline;
+      }
+
+      .social_media ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .social_media ul a {
+        margin: 0 10px;
+        color: #555;
+        transition: color 0.3s;
+      }
+
+      .social_media ul a:hover {
+        color: #007bff;
+      }
+
+      .btn_one label,
+      .btn_two label {
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: #fff;
+      }
+
+      .btn_two {
+        text-align: right;
+        margin-bottom: 20px;
+      }
+
+      .content_area {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      .center_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .center_menu button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 200px;
+      }
+
+      .center_menu button:hover {
+        background-color: #218838;
+      }
+
+      footer.footer {
+        background-color: #f8f9fa;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .footer h2 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+      }
+
+      .footer p {
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #555;
+      }
+
+      /* Sidebar Button Positioning */
+      .btn_one {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+      /* Hidden Checkbox Input for Sidebar Toggle */
+      #check {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_box">
+      <!-- Sidebar Toggle Button positioned at the top left -->
+      <div class="btn_one">
+        <label for="check" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+
+      <!-- Hidden Checkbox for Sidebar Toggle -->
+      <input type="checkbox" id="check" />
+
+      <!-- Sidebar Menu -->
+      <nav class="sidebar_menu">
+        <div class="logo">
+          <a href="/pages/index.htm">Dabba Vala</a>
+        </div>
+
+        <div class="btn_two">
+          <label for="check" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <i class="fa-solid fa-store"></i>
+              <a href="/pages/menu.htm">Menu</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-right-to-bracket"></i>
+              <a href="/pages/login.htm">Login</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-user-plus"></i>
+              <a href="/pages/signUp.html">Signup</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="/pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social_media">
+          <ul>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="content_area">
+        <!-- Dabba Vala Logo at the top center -->
+        <img src="/images/logo.png" alt="Dabba Vala Logo" style="width: 200px; margin-bottom: 20px;" />
+
+        <div class="center_menu">
+          <h1>Welcome to Dabba Vala</h1>
+          <button onclick="window.location.href='/pages/login.htm'">Login</button>
+          <button onclick="window.location.href='/pages/signUp.html'">Signup</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <h2>About Us</h2>
+      <p>
+        At Dabba Vala, we specialize in delivering delicious, homemade meals
+        tailored to your taste. Our mission is to provide comfort and
+        convenience through healthy, affordable food. Since our inception, we
+        have been committed to quality and customer satisfaction.
+      </p>
+    </footer>
+  </body>
+</html>

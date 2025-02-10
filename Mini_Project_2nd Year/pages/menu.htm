@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Thali - Dabba Vala</title>
+    <link rel="stylesheet" href="/css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="/javaScript/menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Dabba Vala</h1>
+        </div>
+        <div class="logo-img">
+            <img src="/images/logo.png" alt="Dabba Vala Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu">
+            <h2>Create Your Thali</h2>
+            <form class="thali-form">
+                <div class="menu-column">
+                    <h3>Choose Your Bread</h3>
+                    <label>
+                        <input type="checkbox" name="bread" value="Naan"> Naan
+                        <input type="number" name="naan-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bread" value="Roti"> Roti
+                        <input type="number" name="roti-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bread" value="Paratha"> Paratha
+                        <input type="number" name="paratha-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bread" value="Puri"> Puri
+                        <input type="number" name="puri-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bread" value="Aaloo Paratha"> Aaloo Paratha
+                        <input type="number" name="Aaloo Paratha-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="bread" value="Paneer Paratha"> Paneer Paratha
+                        <input type="number" name="Paneer Paratha-quantity" value="1" min="1" step="1">
+                    </label>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Choose Your Dal</h3>
+                    <label>
+                        <input type="checkbox" name="dal" value="Tadka Dal"> Tadka Dal
+                        <input type="number" name="tadka-dal-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="dal" value="Daal Makhani"> Daal Makhani
+                        <input type="number" name="Daal Makhani-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="dal" value="Arhar Dal"> Arhar Dal
+                        <input type="number" name="Arhar Daal-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="dal" value="Masoor Dal"> Masoor Dal
+                        <input type="number" name="masoor-dal-quantity" value="1" min="1" step="1">
+                    </label>
+                </div>
+
+                <div class="menu-column">
+                    <h3>Choose Your Vegetable</h3>
+                    <label>
+                        <input type="checkbox" name="vegetable" value="Aloo Gobi"> Aloo Gobi
+                        <input type="number" name="aloo-gobi-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="vegetable" value="Baingan Bharta"> Baingan Bharta
+                        <input type="number" name="baingan-bharta-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="vegetable" value="Mix Veg"> Mix Veg
+                        <input type="number" name="mix-veg-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="vegetable" value="Shahi Paneer"> Shahi Paneer
+                        <input type="number" name="shahi-paneer-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Seasonal Veggy" value="Seasonal Veggy"> Seasonal Veggy
+                        <input type="number" name="Seasonal Veggy" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Kadhi" value="Kadhi"> Kadhi
+                        <input type="number" name="Kadhi" value="1" min="1" step="1">
+                    </label>
+                    
+                </div>
+
+                <div class="menu-column">
+                    <h3>Choose Your Add-Ons</h3>
+                    <label>
+                        <input type="checkbox" name="add-ons" value="Sweet"> Sweet
+                        <input type="number" name="sweet-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="add-ons" value="Dahi"> Dahi
+                        <input type="number" name="dahi-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="add-ons" value="Chach"> Chach
+                        <input type="number" name="chach-quantity" value="1" min="1" step="1">
+                    </label>
+                    <label>
+                        <input type="checkbox" name="add-ons" value="Papad"> Papad
+                        <input type="number" name="papad-quantity" value="1" min="1" step="1">
+                    </label>
+                </div>
+
+                <a href="final_page.htm">
+                    <button id="createMyThalBtn">Create My Thali</button>
+                </a>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dabba Vala. All rights reserved.</p>
+    </footer>
+</body>
+
